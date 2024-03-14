@@ -60,13 +60,13 @@ class Layout:
             template_pdf.setPageSize(portrait(A4))
 
             template_pdf.drawImage(self.image1, 10, 740, 120, 100)
-            template_pdf.drawImage(self.image2, 450, 15)
+            template_pdf.drawImage(self.image2, 450, 15, 150, 50)
             template_pdf.save()
         elif self.orientation == 'landscape':
             template_pdf.setPageSize(landscape(A4))
 
             template_pdf.drawImage(self.image1, 10, 470, 120, 100)
-            template_pdf.drawImage(self.image2, 680, 25)
+            template_pdf.drawImage(self.image2, 680, 25, 150, 50)
             template_pdf.save()
 
 
